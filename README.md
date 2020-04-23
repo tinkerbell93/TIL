@@ -34,10 +34,6 @@
 
   ###### 📝 Weekend Test
 
-- 모르는 용어 정리 - h6
-
-  ###### &#128210;  용어정리
-  
 - 코드사용 주의사항
 
   &#128680; **주의**
@@ -63,3 +59,8 @@
 
 [목차](https://github.com/tinkerbell93/TIL/blob/master/index.md)
 
+
+
+## 용어정리
+
+[목차](https://github.com/tinkerbell93/TIL/blob/master/arrange_terminology.md)
