@@ -63,4 +63,4 @@
 
 ## 용어정리
 
-[목차](https://github.com/tinkerbell93/TIL/blob/master/arrange_terminology.md)
+[용어](https://github.com/tinkerbell93/TIL/blob/master/arrange_terminology.md)
