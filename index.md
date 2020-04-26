@@ -54,7 +54,7 @@
 
 ## Rubber Duck
 
-1. [변수]([https://github.com/tinkerbell93/TIL/blob/master/JavaScript/FDS/200422-4-5.md#4-%EB%B3%80%EC%88%98-%EC%84%A0%EC%96%B8%EC%9D%98-%EC%8B%A4%ED%96%89-%EC%8B%9C%EC%A0%90%EA%B3%BC-%EB%B3%80%EC%88%98-%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85](https://github.com/tinkerbell93/TIL/blob/master/JavaScript/FDS/200422-4-5.md#4-변수-선언의-실행-시점과-변수-호이스팅))
+1. [변수](./JavaScript/FDS/200422-4-5.md#4-변수-선언의-실행-시점과-변수-호이스팅)
 
 2. 표현식 = 값 = 리터럴 (= 은 동치의 개념으로 사용)
 
