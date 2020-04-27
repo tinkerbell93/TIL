@@ -30,15 +30,11 @@
 
 - [Operator](./JavaScript/FDS/200424-6-7.md#연산자)
 
-  복습 정리 안됨
-
-  ---
-
-  
-
 - [Control Flow Statement](./JavaScript/FDS/200426-8-9.md#제어문)
 
 - [Type conversion](./JavaScript/FDS/200426-8-9.md#타입-변환과-단축-평가)
+
+- [Object Literal](./JavaScript/FDS/200427-10-11.md#객체-리터럴)
 
   예습완료
 
