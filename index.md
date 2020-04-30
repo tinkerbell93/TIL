@@ -40,6 +40,12 @@
 
 - [Function](./JavaScript/FDS/200428-12.md#함수)
 
+- [Scope](./JavaScript/FDS/200430-13-15.md#스코프)
+
+- [problem of global variable](./JavaScript/FDS/200430-13-15.md#전역-변수의-문제점)
+
+- [let, const and Block label scope](./JavaScript/FDS/200430-13-15.md#let-const와-블록-레벨-스코프)
+
   예습완료
 
 
