@@ -46,6 +46,10 @@
 
 - [let, const and Block label scope](./JavaScript/FDS/200430-13-15.md#let-const와-블록-레벨-스코프)
 
+- [property attribute](./JavaScript/FDS/200503-16-17.md#프로퍼티-어트리뷰트)
+
+- [create an object as a constructor function](./JavaScript/FDS/200503-16-17.md#생성자-함수에-의한-객체-생성)
+
   예습완료
 
 
