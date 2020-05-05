@@ -1,4 +1,4 @@
-# &#128210; Arrange Terminology
+# &#128210; Vocabulary
 
 - 웹어플리케이션
 
