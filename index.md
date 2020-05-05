@@ -42,15 +42,19 @@
 
 - [Scope](./JavaScript/FDS/200430-13-15.md#스코프)
 
-- [problem of global variable](./JavaScript/FDS/200430-13-15.md#전역-변수의-문제점)
+- [Problem of global variable](./JavaScript/FDS/200430-13-15.md#전역-변수의-문제점)
 
 - [let, const and Block label scope](./JavaScript/FDS/200430-13-15.md#let-const와-블록-레벨-스코프)
 
-- [property attribute](./JavaScript/FDS/200503-16-17.md#프로퍼티-어트리뷰트)
+- [Property attribute](./JavaScript/FDS/200503-16-17.md#프로퍼티-어트리뷰트)
 
-- [create an object as a constructor function](./JavaScript/FDS/200503-16-17.md#생성자-함수에-의한-객체-생성)
+- [Create an object as a constructor function](./JavaScript/FDS/200503-16-17.md#생성자-함수에-의한-객체-생성)
 
-  예습완료
+- [Function and First-class object](./JavaScript/FDS/200505-18-19.md#함수와-일급-객체)
+
+- [Prototype](./JavaScript/FDS/200505-18-19.md#프로토타입)
+
+  
 
 
 
