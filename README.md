@@ -30,9 +30,9 @@
 
   ---
 
-- Weekend Test 오답정리 
+- Everyday Test 오답정리 
 
-  **📝 Weekend Test**
+  **📝 Everyday Test**
 
 - 코드사용 주의사항
 
