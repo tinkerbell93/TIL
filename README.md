@@ -48,7 +48,7 @@
 
 - HTML CSS : HTML, CSS  복습 및 정리
 - JavaScript : JS 복습 및 정리
-  - class : 수업 예습 정리
+  - FDS : 패캠 수업 내용 정리
 - Git : Git관련 내용 정리
 - DB : DB 복습 및 정리
 - img : 자료첨부에 관한 이미지 관리
