@@ -54,6 +54,8 @@
 
 - [Prototype](./JavaScript/FDS/200505-18-19.md#프로토타입)
 
+- [Built-in objects](./JavaScript/FDS/200508-20-21.md#빌트인-객체)
+
   
 
 
