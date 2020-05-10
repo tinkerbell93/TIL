@@ -70,3 +70,4 @@
 
 ## Rubber Duck
 
+let, const 변수 호이스팅에 관하여
