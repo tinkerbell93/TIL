@@ -58,6 +58,10 @@
 
 - [This](./JavaScript/FDS/200510-22.md#this)
 
+  ---
+
+- [quiz](./JavaScript/FDS/quiz-01.md)
+
 
 
 ## DataBase
