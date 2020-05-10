@@ -60,7 +60,7 @@
 
   ---
 
-- [quiz](./JavaScript/FDS/quiz-01.md)
+- [quiz](./JavaScript/FDS/quiz/quiz-01.md)
 
 
 
