@@ -1,3 +1,5 @@
+# 1. 제어문 연습 문제
+
 ```js
 // 1.
 var x = 15;
@@ -113,6 +115,46 @@ for (let i = 0; i < 5; i++) {
   // i = 2일때, ***
   result += '*';
   console.log(result);
+}
+```
+
+```js
+// 12. 삼각형 출력하기 - pattern 2
+
+let result = '';
+// i 라인 개수
+for (let i = 0; i < 5; i++) {
+  // j 공백
+  let space = '';
+  for (let j = 0; j < 5; j++) {
+    if (i + j > 4) {
+      space += ' ';
+    }
+  }
+  // k 별
+  let star = '';
+  for (let k = 0; k < 5; k++) {
+    if (i + k < 5) {
+      star += '*';
+    }
+  }
+  result = space + star;
+  console.log(result);
+}
+```
+
+```js
+// 13. 삼각형 출력하기 - pattern 3
+
+for (let i = 0; i < 5; i++) {
+  let result = '';
+  for (let j = 0; j < 5; j++) {
+    if (i + j < 5) {
+      result = result + '*';
+    }
+  }
+  console.log(result);
+  result = ' ' + result;
 }
 ```
 
