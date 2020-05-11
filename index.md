@@ -20,7 +20,7 @@
 
 - [Expression and Statement](./JavaScript/FDS/200422-4-5.md#표현식과-문)
 
-  복습 완료
+  정리 완료
 
   ---
 
