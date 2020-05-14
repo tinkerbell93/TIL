@@ -159,59 +159,78 @@ for (let i = 0; i < 5; i++) {
 ```
 
 ```js
-// 선형 검색
+// 14. 삼각형 출력하기 - pattern 4
 
-function linearSearch( array, target) {
-  let index = -1;
-  const length = array.length;
-
-  for (let i = 0; i < length; i++) {
-    if (array[i] === target) index = i;
+let result = '';
+// i 라인 개수
+for (let i = 0; i < 5; i++) {
+  // j 별
+  let star = '';
+  for (let j = 0; j < 5; j++) {
+    if (i + j > 3) {
+      star += '*';
+    }
   }
-  return index;
+  // k 공백
+  let space = '';
+  for (let k = 0; k < 5; k++) {
+    if (i + k < 5) {
+      space += ' ';
+    }
+  }
+  result = space + star;
+  console.log(result);
 }
-console.log(linearSearch([1, 2, 3, 4, 5, 6], 1)); // 0
-console.log(linearSearch([1, 2, 3, 4, 5, 6], 3)); // 2
-console.log(linearSearch([1, 2, 3, 4, 5, 6], 5)); // 4
-console.log(linearSearch([1, 2, 3, 4, 5, 6], 6)); // 5
-console.log(linearSearch([1, 2, 3, 4, 5, 6], -1)); // -1
-console.log(linearSearch([1, 2, 3, 4, 5, 6], 0)); // -1
-console.log(linearSearch([1, 2, 3, 4, 5, 6], 7)); // -1
 ```
 
 ```js
-// 이진 검색
+// 15. 정삼각형 출력하기
 
-function binarySearch(array, target) {
-  let start = 0;
-  let end = array.length - 1;
-  let result = -1;  // return은 되도록 적게 사용하면 좋다.
-
-  while (start <= end) {
-    const mid = Math.floor((start + end) / 2);
-    if (array[mid] === target) {
-      // return mid;
-      result = mid; // mid의 index의 값을 반환
-      break;  // 무한루프 방지
-    } if (array[mid] < target) {
-      start = mid + 1;
-    } else if (array[mid] > target) {
-      end = mid - 1;
+let result = '';
+// i 라인 개수
+for (let i = 0; i < 5; i++) {
+  // j 별
+  let star = '*';
+  for (let j = 0; j < 5; j++) {
+    if (i + j > 4) {
+      star += '**';
     }
   }
-  // return -1;
-  return result;
+  // k 공백
+  let space = '';
+  for (let k = 0; k < 5; k++) {
+    if (i + k < 5) {
+      space += ' ';
+    }
+  }
+  result = space + star;
+  console.log(result);
 }
+```
 
+```js
+// 16. 역정삼각형 출력하기
 
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 1)); // 0
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 3)); // 2
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 5)); // 4
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 6)); // 5
-console.log(binarySearch([1, 2, 3, 4, 5, 6], -1)); // -1
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 0)); // -1
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 7)); // -1
-
+let result = '';
+// i 라인 개수
+for (let i = 0; i < 5; i++) {
+  // j 공백
+  let space = '';
+  for (let j = 0; j < 5; j++) {
+    if (i + j > 4) {
+      space += ' ';
+    }
+  }
+  // k 별
+  let star = '*';
+  for (let k = 0; k < 5; k++) {
+    if (i + k < 4) {
+      star += '**';
+    }
+  }
+  result = space + star;
+  console.log(result);
+}
 ```
 
 
