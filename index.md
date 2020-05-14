@@ -60,6 +60,10 @@
 
 - [Execution context](./JavaScript/FDS/200512-23.md#실행-컨텍스트)
 
+- [Closure](./JavaScript/FDS/200513-24.md#클로저)
+
+- 
+
   ---
 
 - [quiz](./JavaScript/FDS/quiz/quiz-01.md)
