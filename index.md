@@ -66,7 +66,9 @@
 
   ---
 
-- [quiz](./JavaScript/FDS/quiz/quiz-01.md)
+- [제어문 연습 문제](./JavaScript/FDS/quiz/quiz-01.md)
+
+- [자료 구조와 알고리즘](./JavaScript/FDS/quiz/quiz-02.md)
 
 
 
