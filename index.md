@@ -62,7 +62,7 @@
 
 - [Closure](./JavaScript/FDS/200513-24.md#클로저)
 
-- 
+- [Class](./JavaScript/FDS/200514-25.md#클래스)
 
   ---
 
@@ -80,4 +80,3 @@
 
 ## Rubber Duck
 
-let, const 변수 호이스팅에 관하여
