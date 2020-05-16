@@ -64,6 +64,10 @@
 
 - [Class](./JavaScript/FDS/200514-25.md#클래스)
 
+- [ES6 Functions](./JavaScript/FDS/200515-26.md#ES6-함수의-추가-기능)
+
+  
+
   ---
 
 - [제어문 연습 문제](./JavaScript/FDS/quiz/quiz-01.md)
