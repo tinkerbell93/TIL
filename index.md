@@ -72,6 +72,8 @@
 
 - [Math](./JavaScript/FDS/200519-28.md#Math)
 
+- [Date](./JavaScript/FDS/200519-28.md#Date)
+
   
 
   ---
