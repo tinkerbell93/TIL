@@ -68,6 +68,10 @@
 
 - [Array](./JavaScript/FDS/200517-27.md#배열)
 
+- [Number](./JavaScript/FDS/200519-28.md#Number)
+
+- [Math](./JavaScript/FDS/200519-28.md#Math)
+
   
 
   ---
