@@ -70,9 +70,11 @@
 
 - [Number](./JavaScript/FDS/200519-28.md#Number)
 
-- [Math](./JavaScript/FDS/200519-28.md#Math)
+- [Math](./JavaScript/FDS/200519-29.md#Math)
 
-- [Date](./JavaScript/FDS/200519-28.md#Date)
+- [Date](./JavaScript/FDS/200519-30.md#Date)
+
+- [RegExp](./JavaScript/FDS/200519-31.md#RegExp)
 
   
 
