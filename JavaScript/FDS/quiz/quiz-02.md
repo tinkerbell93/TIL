@@ -1,6 +1,8 @@
 # 2. 자료 구조와 알고리즘
 
+## 1. 검색
 
+### 1.1 선형 검색
 
 ```js
 // 선형 검색
@@ -22,6 +24,8 @@ console.log(linearSearch([1, 2, 3, 4, 5, 6], -1)); // -1
 console.log(linearSearch([1, 2, 3, 4, 5, 6], 0)); // -1
 console.log(linearSearch([1, 2, 3, 4, 5, 6], 7)); // -1
 ```
+
+### 1.2 이진 검색
 
 ```js
 // 이진 검색
@@ -57,3 +61,30 @@ console.log(binarySearch([1, 2, 3, 4, 5, 6], 0)); // -1
 console.log(binarySearch([1, 2, 3, 4, 5, 6], 7)); // -1
 
 ```
+
+## 2.정렬
+
+### 2.1 버블정렬
+
+```js
+
+function bubbleSort(array) {
+    for(let j = 0; j < array.length - 1; j++){
+        for(let i = 0; i < array.length - 1; i++) {
+            if( array[i] > array[i+1] ){
+                // 배열에서 재할당
+                let temp = array[i+1];
+                array[i+1] = array[i];  
+                array[i] = temp;     
+            }
+            // console.log(array)
+        }
+    }
+    return array;
+}
+
+console.log(bubbleSort([5, 4, 3, 2, 1]));     // [1, 2, 3, 4, 5]
+console.log(bubbleSort([5, 2, 1, 3, 4, 6]));  // [1, 2, 3, 4, 5, 6]
+console.log(bubbleSort([3, 1, 0, -1, 4, 2])); // [-1, 0, 1, 2, 3, 4]
+```
+
