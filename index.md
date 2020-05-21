@@ -82,7 +82,7 @@
 
 - [Destructuring assignment](./JavaScript/FDS/200521-35-36.md#디스트럭처링-할당)
 
-- [Browser Rendering](./JavaScript/FDS/200521-38.md#브라우저의 렌더링 과정)
+- [Browser Rendering](./JavaScript/FDS/200521-38.md#브라우저의-렌더링-과정)
 
   
 
