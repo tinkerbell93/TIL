@@ -78,6 +78,12 @@
 
 - [String](./JavaScript/FDS/200521-32.md#String)
 
+- [Spread](./JavaScript/FDS/200521-35-56.md#스프레드-문법)
+
+- [Destructuring assignment](./JavaScript/FDS/200521-35-56.md#디스트럭처링-할당)
+
+  
+
   
 
   ---
