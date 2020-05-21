@@ -76,6 +76,8 @@
 
 - [RegExp](./JavaScript/FDS/200519-31.md#RegExp)
 
+- [String](./JavaScript/FDS/200521-32.md#String)
+
   
 
   ---
