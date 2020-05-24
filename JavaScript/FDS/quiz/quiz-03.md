@@ -205,11 +205,14 @@ let todos = [
 ];
 
 function toggleCompletedById(id) {
-
+  // todos.map(todo => todo = {...todos[id], !(todo.completed)});
+  todos = todos.map(todo => (todo.id === id ? { ...todo, completed: !todo.completed } : todo));
 }
-// 빈객체를 만든다.
-// todo를 풀어서 빈객체에 넣고 => 카피한다
-// todo.completed 재할당
+
+// todo.id === id 조건이 있는 이유? 인수로 전달된 해당 객체를 조작하기 위해서????
+// 빈객체를 만들고
+// todo를 빈객체에 얕은 복사를 하는데 todo.completed의 값은 반대로 넣음
+// 그리고 todos에 재할당
 
 toggleCompletedById(2);
 
@@ -232,6 +235,31 @@ console.log(todos);
 todos의 모든 요소의 completed 프로퍼티 값을 true로 설정하는 함수를 작성하라.
 
 hint) 기존 객체의 특정 프로퍼티를 변경/추가하여 새로운 객체를 생성하려면 [Object.assign](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) 또는 [스프레드 문법](https://poiemaweb.com/fastcampus/spread-syntax#3-객체-리터럴-내부에서-사용하는-경우)을 사용한다.
+
+```js
+let todos = [
+  { id: 3, content: 'HTML', completed: false },
+  { id: 2, content: 'CSS', completed: true },
+  { id: 1, content: 'Javascript', completed: false }
+];
+
+function toggleCompletedAll() {
+  todos = todos.map((todo, index) => todo[index] = { ...todo, completed: true });
+  // ESLint 왜 빨간줄????
+}
+
+toggleCompletedAll();
+
+console.log(todos);
+/*
+[
+  { id: 3, content: 'HTML', completed: true },
+  { id: 2, content: 'CSS', completed: true },
+  { id: 1, content: 'Javascript', completed: true }
+]
+*/
+
+```
 
 
 
