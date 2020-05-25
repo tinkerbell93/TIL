@@ -1,6 +1,6 @@
 # 3. Array HOF 연습 문제
 
-## 1. html 생성
+## 1. html  생성
 
 아래 배열을 사용하여 html을 생성하는 함수를 작성하라.
 
@@ -193,7 +193,7 @@ console.log(todos);
 
 ## 6. 특정 요소의 프로퍼티 값 반전
 
-todos에서 대상 요소의 id를 인수로 전달하면 해당 요소의 completed 프로퍼티 값을 반전하는 함수를 작성하라.
+todos에서 **대상 요소의 id를 인수로 전달하면** 해당 요소의 completed 프로퍼티 값을 반전하는 함수를 작성하라.
 
 hint) 기존 객체의 특정 프로퍼티를 변경/추가하여 새로운 객체를 생성하려면 [Object.assign](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) 또는 [스프레드 문법](https://poiemaweb.com/fastcampus/spread-syntax#3-객체-리터럴-내부에서-사용하는-경우)을 사용한다.
 
@@ -210,6 +210,8 @@ function toggleCompletedById(id) {
 }
 
 // todo.id === id 조건이 있는 이유? 인수로 전달된 해당 객체를 조작하기 위해서????
+// 인수를 전달받은 아이디값과 동일한지 확인, 조건이 없다면 모든 객체의 completed 값이 반전됨
+
 // 빈객체를 만들고
 // todo를 빈객체에 얕은 복사를 하는데 todo.completed의 값은 반대로 넣음
 // 그리고 todos에 재할당
@@ -244,8 +246,17 @@ let todos = [
 ];
 
 function toggleCompletedAll() {
-  todos = todos.map((todo, index) => todo[index] = { ...todo, completed: true });
-  // ESLint 왜 빨간줄????
+  todos = todos.map((todo, index) => {
+    console.log(todo[index]); // undefined를 식별자로 생각하여 const undefined = ''; 를 사용하면 에러남
+    console.log(todo[index] = {}); // undefined
+    todo[index] = { ...todo, completed: true };
+    return todo[index];
+  });
+  // map 메소드 이용
+  // todos = todos.map(todo => ({ ...todo, completed: true }));
+
+  // forEach 메소드 이용
+  // todos.forEach((todo, index) => (todos[index] = { ...todo, completed: true }));
 }
 
 toggleCompletedAll();
@@ -258,7 +269,6 @@ console.log(todos);
   { id: 1, content: 'Javascript', completed: true }
 ]
 */
-
 ```
 
 
