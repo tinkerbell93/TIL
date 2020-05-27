@@ -96,6 +96,7 @@ function sortBy(key) {
   return todos.slice().sort((a, b) => a[key] > b[key] ? 1 : a[key] < b[key] ? -1 : 0)
 }
 // a.key와 a[key] 둘 다 사용할 수 있지 않나????
+// nop.이라고 생각했지만 둘 다 사용이 가능하다..????
 
 console.log(sortBy('id'));
 /*
