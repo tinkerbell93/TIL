@@ -88,10 +88,6 @@
 
 - [Event](./JavaScript/FDS/200525-40.md#Event)
 
-  
-
-  
-
   ---
 
 - [제어문 연습 문제](./JavaScript/FDS/quiz/quiz-01.md)
@@ -108,11 +104,9 @@
 
 ## Git
 
+- [git](./Git/200527.md)
+
 
 
 ## Rubber Duck
 
-- 클래스 필드
-
-- 정적 메소드와 프로토타입 메소드의 차이
-- super
