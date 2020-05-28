@@ -229,7 +229,15 @@ console.log(todos);
 */
 ```
 
+이렇게 해도 원했던 값이 나오는 이유는? 
 
+```js
+function toggleCompletedById(id) {
+  todos.map(todo => (todo.id === id ? todo.completed = !todo.completed : todo));
+}
+```
+
+원본의 todos에서 todo.completed만 바꼈기 때문이다. 문제의 답은 원본 객체에서 새로운 객체로 만들어서 리턴했지만 해당 함수는 원본 객체에 수정했기 때문이다.
 
 
 
