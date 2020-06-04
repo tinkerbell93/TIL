@@ -88,6 +88,10 @@
 
 - [Event](./JavaScript/FDS/200525-40.md#Event)
 
+- [Timer](./JavaScript/FDS/200604-41-42.md#타이머)
+
+- [Asynchronous Programming](./JavaScript/FDS/200604-41-42.md#비동기-프로그래밍)
+
   ---
 
 - [제어문 연습 문제](./JavaScript/FDS/quiz/quiz-01.md)
@@ -95,6 +99,8 @@
 - [자료 구조와 알고리즘](./JavaScript/FDS/quiz/quiz-02.md)
 
 - [Array HOF 연습 문제](./JavaScript/FDS/quiz/quiz-03.md)
+
+- [Todo](./JavaScript/FDS/200603_todo.md)
 
 
 

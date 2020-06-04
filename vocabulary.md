@@ -353,4 +353,18 @@
 - 동기 (Synchronous)
 
   위에서 아래 방향으로 순차적
+  
+- 태스크 (task)
+
+- 이벤트 루프 (Event Loop)
+
+  자바스크립트의 동시성을 지원한다.
+
+- 힙(Heap)
+
+  객체가 할당되는 구조화되지 않은 넓은 메모리 영역
+
+- 태스크 큐(Task queue/Event queue/Callback queue)
+
+  타이머 함수(setTimeout, setInterval)와 같은 비동기 처리 함수의 콜백 함수 또는 이벤트 핸들러가 일시적으로 보관되는 영역
 
