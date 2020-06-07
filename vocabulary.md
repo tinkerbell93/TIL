@@ -360,11 +360,23 @@
 
   자바스크립트의 동시성을 지원한다.
 
-- 힙(Heap)
+- 힙 (Heap)
 
   객체가 할당되는 구조화되지 않은 넓은 메모리 영역
 
-- 태스크 큐(Task queue/Event queue/Callback queue)
+- 태스크 큐 (Task queue/Event queue/Callback queue)
 
   타이머 함수(setTimeout, setInterval)와 같은 비동기 처리 함수의 콜백 함수 또는 이벤트 핸들러가 일시적으로 보관되는 영역
+
+- JSON (JavaScript Object Notation)
+
+  클라이언트와 서버 간의 통신을 위한 텍스트 데이터 포맷으로 자바스크립트에 종속되지 않는 언어 독립형 데이터 포맷으로 대부분의 프로그래밍 언어에서 사용
+
+- 직렬화 (Serializing)
+
+  객체를 전송 가능한 형태(문자열화)로 변형하는 것
+
+- 역직렬화 (Deserializing)
+
+  전송된 문자열 등을 다시 객체로 복원하는 것
 
