@@ -92,6 +92,10 @@
 
 - [Asynchronous Programming](./JavaScript/FDS/200604-41-42.md#비동기-프로그래밍)
 
+- [Ajax](./JavaScript/FDS/200607-43-44.md#Ajax)
+
+- [REST API](./JavaScript/FDS/200607-43-44.md#REST-API)
+
   ---
 
 - [제어문 연습 문제](./JavaScript/FDS/quiz/quiz-01.md)
