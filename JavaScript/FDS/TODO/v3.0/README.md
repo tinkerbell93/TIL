@@ -130,3 +130,7 @@ $clearBtn.onclick = ({ target }) => {
 };
 ```
 
+- viewTodos 를 조건에 따라 filter 먹임
+  조건 : 현재 active클래스가 붙어있는 id에 따라 보여줄 목록을 분류함
+
+  => `target.id`로만 접근하려고 해서 어려웠음
