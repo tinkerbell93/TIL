@@ -34,6 +34,8 @@ const render = () => {
   $completedTodos.textContent = completedTodos();
   $activeTodos.textContent = todos.length - completedTodos();
 
+  // viewTodos를 로컬스토리지에 저장
+  localStorage.setItem('todos', JSON.stringify(viewTodos));
 };
 
 const generateId = () => Math.max(...todos.map(todo => todo.id), 0) + 1;
@@ -61,11 +63,14 @@ const clearCompleted = () => {
 }
 
 const getTodos = () => {
-  todos = [
-    { id: 1, content: 'HTML', completed: false },
-    { id: 2, content: 'CSS', completed: true },
-    { id: 3, content: 'Javascript', completed: false }
-  ];
+  // todos = [
+  //   { id: 1, content: 'HTML', completed: false },
+  //   { id: 2, content: 'CSS', completed: true },
+  //   { id: 3, content: 'Javascript', completed: false }
+  // ];
+  
+  // 저장된 로컬스토리지에서 todos 불러오기
+  todos = JSON.parse(localStorage.getItem('todos'));
 
   todos.sort((todo1, todo2) => todo2.id - todo1.id);
 
