@@ -1,3 +1,12 @@
+#  JavaScript lesson
+
+## TODO v3.0
+
+![todo](./img/todo.png)
+
+[ 도전1 ]
+
+```js
 // State
 let todos = [];
 
@@ -119,3 +128,5 @@ $clearBtn.onclick = ({ target }) => {
   clearCompleted();
   render();
 };
+```
+
