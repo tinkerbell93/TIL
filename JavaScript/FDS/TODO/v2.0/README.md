@@ -1,5 +1,9 @@
 #  JavaScript lesson
 
+## TODO v2.0
+
+![todo](./img/todo.png)
+
 [ 도전1 ]
 
 ```js
