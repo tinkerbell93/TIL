@@ -134,3 +134,10 @@ $clearBtn.onclick = ({ target }) => {
   조건 : 현재 active클래스가 붙어있는 id에 따라 보여줄 목록을 분류함
 
   => `target.id`로만 접근하려고 해서 어려웠음
+
+
+
+[ 도전2 ]
+
+- 로컬스토리지 저장할 수 있도록 추가
+- Mark all as complete가 체크되어 있는 상태에서 todo 리스트 중 하나라도 체크가 해제되면 Mark all as complete도 해제되는 기능 추가

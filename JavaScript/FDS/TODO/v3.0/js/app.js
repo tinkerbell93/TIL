@@ -33,6 +33,7 @@ const render = () => {
   $todos.innerHTML = html;
   $completedTodos.textContent = completedTodos();
   $activeTodos.textContent = todos.length - completedTodos();
+  checkedCompletedAll();
 
   // viewTodos를 로컬스토리지에 저장
   localStorage.setItem('todos', JSON.stringify(viewTodos));
@@ -51,6 +52,10 @@ const removeTodo = id => {
 const completedAll = completed => {
   todos = todos.map(todo => ({ ...todo, completed }));
 };
+
+const checkedCompletedAll = () => {
+  if (todos.every(todo => todo.completed) ? $completeAll.checked = true : $completeAll.checked = false);
+}
 
 const completed = id => {
   todos = todos.map(todo => (todo.id === +id ? ({ ...todo, completed: !todo.completed }) : todo));
@@ -73,7 +78,6 @@ const getTodos = () => {
   todos = JSON.parse(localStorage.getItem('todos'));
 
   todos.sort((todo1, todo2) => todo2.id - todo1.id);
-
   render();
 };
 
@@ -109,13 +113,14 @@ $todos.onclick = ({ target }) => {
 // COMPLITED TODO
 $todos.onchange = ({ target }) => {
   completed(target.parentNode.id);
+  
   render();
 };
 
 // SELECT ALL
 $completeAll.onchange = () => {
   completedAll($completeAll.checked);
-
+  
   render();
 };
 
