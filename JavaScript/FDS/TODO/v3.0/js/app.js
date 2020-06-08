@@ -1,5 +1,7 @@
 // State
+// 뷰를 바꾸는 트리거
 let todos = [];
+let navState = 'all';
 
 // 1. 서버에서 리소스를 취득
 // 2. 취득한 리소스를 화면에 출력
@@ -17,12 +19,9 @@ const $clearBtn = document.querySelector('.clear-completed .btn');
 // FUNCTIONs
 const render = () => {
   let html = '';
-  let viewTodos = todos;
-  const $active = document.querySelector('.active');
-  // console.log($active.id);
-  viewTodos = viewTodos.filter(todo => ($active.id === 'all' ? todo : ($active.id === 'active' ? !todo.completed : todo.completed)));
+  let _todos = todos.filter(({completed}) => navState ===  'complete' ? completed : (navState === 'active' ? !completed : true));
 
-  viewTodos.forEach(({ id, content, completed }) => {
+  _todos.forEach(({ id, content, completed }) => {
     html += `<li id="${id}" class="todo-item">
     <input id="ck-${id}" class="checkbox" type="checkbox" ${completed ? 'checked' : ''}>
     <label for="ck-${id}">${content}</label>
@@ -36,8 +35,19 @@ const render = () => {
   checkedCompletedAll();
 
   // viewTodos를 로컬스토리지에 저장
-  localStorage.setItem('todos', JSON.stringify(viewTodos));
+  localStorage.setItem('todos', JSON.stringify(_todos));
 };
+
+const changeNavState = id => {
+  
+  [...$nav.children].forEach($navItem => {
+    $navItem.classList.toggle('active', 
+    $navItem.id === id )
+  })
+
+  navState = id;
+  render();
+}
 
 const generateId = () => Math.max(...todos.map(todo => todo.id), 0) + 1;
 
@@ -68,16 +78,16 @@ const clearCompleted = () => {
 }
 
 const getTodos = () => {
-  // todos = [
-  //   { id: 1, content: 'HTML', completed: false },
-  //   { id: 2, content: 'CSS', completed: true },
-  //   { id: 3, content: 'Javascript', completed: false }
-  // ];
+  todos = [
+    { id: 1, content: 'HTML', completed: false },
+    { id: 2, content: 'CSS', completed: true },
+    { id: 3, contentnav: 'Javascript', completed: false }
+  ];
   
   // 저장된 로컬스토리지에서 todos 불러오기
   todos = JSON.parse(localStorage.getItem('todos'));
 
-  todos.sort((todo1, todo2) => todo2.id - todo1.id);
+  todos = todos.sort((todo1, todo2) => todo2.id - todo1.id);
   render();
 };
 
@@ -87,17 +97,18 @@ window.onload = () => {
 
 // EVENTs
 // NAV TODO
-$nav.onclick = ({ target }) => {
-  if (!target.matches('.nav > li')) return;
-  document.querySelector('.active').classList.remove('active');
-  target.classList.add('active');
+$nav.onclick = ({target}) => {
+  if (!target.matches('.nav > li:not(.active)')) return;
+  changeNavState(target.id)
   
+
   render();
 };
 
+
 // ADD TODO
 $inputTodo.onkeyup = e => {
-  if (e.keyCode !== 13) return;
+  if (e.keyCode !== 13 || $inputTodo.value.trim() === '') return;
   addTodo($inputTodo.value);
   $inputTodo.value = '';
   render();
@@ -113,7 +124,7 @@ $todos.onclick = ({ target }) => {
 // COMPLITED TODO
 $todos.onchange = ({ target }) => {
   completed(target.parentNode.id);
-  
+
   render();
 };
 
@@ -125,7 +136,7 @@ $completeAll.onchange = () => {
 };
 
 // CLEAR COMPLETED
-$clearBtn.onclick = ({ target }) => {
+$clearBtn.onclick = () => {
   clearCompleted();
   render();
 };
