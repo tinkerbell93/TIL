@@ -95,10 +95,9 @@ const removeTodo = id => {
   todos = todos.filter(todo => todo.id !== +id);
   ajax.delete(`/todos/${id}`, () => {
     todos = todos.filter(todo => todo.id !== +id);
+    render();
   });
   console.log('[removeTodo]', todos);
-
-  render();
 };
 
 const toggleCompleteAll = completed => {
@@ -107,15 +106,16 @@ const toggleCompleteAll = completed => {
     render();
   });
   console.log('[toggleCompleteAll]', todos);
-
-  render();
 };
 
 const removeCompleted = () => {
-  todos = todos.filter(todo => !todo.completed);
+  ajax.delete('/todos/completed', _todos => {
+    todos = _todos;
+    render();
+  });
+  // todos = todos.filter(todo => !todo.completed);
   console.log('[removeCompleted]', todos);
 
-  render();
 };
 
 const changeNavState = id => {
@@ -154,7 +154,10 @@ $completeAll.onchange = e => {
   toggleCompleteAll(e.target.checked);
 };
 
-$clearCompleted.onclick = removeCompleted;
+$clearCompleted.onclick = () => {
+  // console.loge(e.target.id);
+  removeCompleted();
+};
 
 $nav.onclick = ({ target }) => {
   if (!target.matches('.nav > li:not(.active)')) return;
