@@ -96,6 +96,8 @@
 
 - [REST API](./JavaScript/FDS/200607-43-44.md#REST-API)
 
+- [Promise](./JavaScript/FDS/200612-45.md#프로미스)
+
   ---
 
 - [제어문 연습 문제](./JavaScript/FDS/quiz/quiz-01.md)
