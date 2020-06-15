@@ -116,6 +116,8 @@
 
 - [Scrolling-goto-top](./JavaScript/FDS/exercise/scrolling-goto-top)
 
+- [Counter](./JavaScript/FDS/exercise/couter)
+
 
 
 
