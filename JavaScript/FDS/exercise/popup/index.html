@@ -20,6 +20,14 @@
       text-align: center;
     }
 
+    /* popup-message */
+    .text-area{
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+
+    /* popup */
     .popup, 
     .overlay{
       /* visibility: hidden; */
@@ -124,6 +132,7 @@
     const renderPopup = () => {
       $popup.classList.toggle('active');
       $overlay.classList.toggle('active');
+      $popupMessage.classList.add('text-area');
     };
 
     // EVENTs
