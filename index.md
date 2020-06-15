@@ -112,15 +112,15 @@
 
 - [TODO v4.0](./JavaScript/FDS/TODO/v4.0)
 
-- [Toggle-side-nav](./JavaScript/FDS/exercise/toggle-side-nav)
+- [Toggle side nav](./JavaScript/FDS/exercise/toggle-side-nav)
 
-- [Scrolling-goto-top](./JavaScript/FDS/exercise/scrolling-goto-top)
+- [Scrolling goto top](./JavaScript/FDS/exercise/scrolling-goto-top)
 
 - [Counter](./JavaScript/FDS/exercise/couter)
 
 - [Stop watch](./JavaScript/FDS/exercise/stop-watch)
 
-
+- [Analog clock](./JavaScript/FDS/exercise/analog-clock)
 
 
 
