@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Popup</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+    body {
+      font-family: 'Open Sans';
+      font-weight: 300;
+      background-color: #D6E1E5;
+    }
+
+    h1 {
+      color: #DB5B33;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .popup, 
+    .overlay{
+      /* visibility: hidden; */
+      display: none;
+    }
+    .popup{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      width: 500px;
+      height: 300px;
+      margin-left: -250px;
+      margin-top: -150px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(24, 37, 53, 0.9);
+    }
+    div.active {
+      /* visibility: visible; */
+      display: block;
+    }
+    .popup p {
+      margin-bottom: 90px;
+    }
+
+    /* reset */
+    input[type="text"],
+    button {
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      outline: 0;
+    }
+
+    /* input */
+    input[type="text"] {
+      width: calc(100% - 137px);
+    }
+    /* button */
+    button {
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #333;
+      font-size: 20px;
+      border: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>JavaScript Popup</h1>
+
+  <div class="popup">
+    <h1>JavaScript Popup</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    <button class="btn-close">X</button>
+    <input type="text" placeholder="메세지를 입력해주세요.">
+    <button class="btn-ok">OK</button>
+    <button class="btn-cancel">Cancel</button>
+  </div>
+  <div class="overlay"></div>
+
+  <button class="toggle-popup">show popup</button>
+
+  <p class="popup-message"></p>
+  <script>
+    // STATE
+    let popupMessage = '';
+
+    // DOMs
+    const $togglePopup = document.querySelector('.toggle-popup');
+    const $popup = document.querySelector('.popup');
+    const $overlay = document.querySelector('.overlay');
+    const $body = document.querySelector('body');
+    const $input = document.querySelector('.popup input');
+    const $btnOk = document.querySelector('.btn-ok');
+    const $popupMessage = document.querySelector('.popup-message');
+    
+    // FUNCTIONs
+    const renderPopup = () => {
+      $popup.classList.toggle('active');
+      $overlay.classList.toggle('active');
+    };
+
+    // EVENTs
+    $togglePopup.onclick = () => {
+      renderPopup();
+    };
+
+    $body.onclick = ({ target }) => {
+      if (!target.matches('.overlay') && !target.matches('.btn-close') && !target.matches('.btn-cancel')) return;
+      renderPopup();
+    };
+
+    $input.onblur = ({ target }) => {
+      popupMessage = target.value;
+    };
+
+    $btnOk.onclick = () => {
+      $popupMessage.textContent = popupMessage;
+      $input.value = '';
+      renderPopup();
+    };
+  </script>
+</body>
+</html>

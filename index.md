@@ -121,6 +121,7 @@
 - [Stop watch](./JavaScript/FDS/exercise/stop-watch)
 
 - [Analog clock](./JavaScript/FDS/exercise/analog-clock)
+- [Popup UI](./JavaScript/FDS/exercise/popup)
 
 
 
