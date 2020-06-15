@@ -112,6 +112,10 @@
 
 - [TODO v4.0](./JavaScript/FDS/TODO/v4.0)
 
+- [Toggle-side-nav](./JavaScript/FDS/exercise/toggle-side-nav)
+
+- [Scrolling-goto-top](./JavaScript/FDS/exercise/scrolling-goto-top)
+
 
 
 
