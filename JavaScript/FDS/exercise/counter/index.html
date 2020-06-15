@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Counter</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+      margin: 20px auto;
+      font-size: 24px;
+      color: #3f51b5;
+    }
+
+    button {
+      padding: 5px 10px;
+      width: 40px;
+      font-size: 24px;
+      border-radius: 5px;
+      color: #3f51b5;
+      border-color: #3f51b5;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .counter {
+      /* width: 50px; */
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="decrease">-</button>
+    <div class="counter">0</div>
+    <button class="increase">+</button>
+  </div>
+
+  <script>
+    // DOMs
+    const $increase = document.querySelector('.increase');
+    const $decrease = document.querySelector('.decrease');
+    const $counter = document.querySelector('.counter');
+
+    // fUNCTION
+    // 함수를 반환하는 고차 함수
+    // 이 함수는 카운트 상태를 유지하기 위한 자유 변수 counter를 기억하는 클로저를 반환한다.
+    const counter = (function () {
+      // 카운트 상태를 유지하기 위한 자유 변수
+      let counter = 0;
+
+      // 함수를 인수로 전달받는 클로저를 반환
+      return function (predicate) {
+        // 인수로 전달 받은 보조 함수에 상태 변경을 위임한다.
+        counter = predicate(counter);
+        $counter.textContent = counter;
+      };
+    }());
+
+    // 보조 함수
+    function increase(n) {
+      return ++n;
+    }
+
+    // 보조 함수
+    function decrease(n) {
+      return n > 0 ? --n : 0;
+    }
+
+    // 보조 함수를 전달하여 호출
+    $increase.onclick = () => {
+      counter(increase);
+    };
+
+    $decrease.onclick = () => {
+      counter(decrease);
+    };
+  </script>
+</body>
+</html>
