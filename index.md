@@ -118,6 +118,8 @@
 
 - [Counter](./JavaScript/FDS/exercise/couter)
 
+- [Stop watch](./JavaScript/FDS/exercise/stop-watch)
+
 
 
 
