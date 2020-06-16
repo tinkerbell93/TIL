@@ -92,6 +92,12 @@
         this.tabState = 1; // tab id
 
         this.render(this.tabState);
+    
+        $tabs.onclick = ({ target }) => {
+          if (!target.matches('.tab') && !target.matches('.tab i')) return;
+          const id = target.id ? target.id : target.parentNode.id;
+          this.changeTabState(id);
+        };
       }
 
       changeTabState(id) {
@@ -150,13 +156,6 @@
             (e.g. functional programming) styles.`
         }
       ]);
-    
-    
-      $tabs.onclick = ({ target }) => {
-        if (!target.matches('.tab') && !target.matches('.tab i')) return;
-        const id = target.id ? target.id : target.parentNode.id;
-        tab.changeTabState(id);
-      };
     };
   </script>
 </body>
