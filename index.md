@@ -122,6 +122,7 @@
 
 - [Analog clock](./JavaScript/FDS/exercise/analog-clock)
 - [Popup UI](./JavaScript/FDS/exercise/popup)
+- [Tabs UI](./JavaScript/FDS/exercise/tabs)
 
 
 
