@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="./js/index.js" defer></script>
+  <style>
+    span::after{
+      content: ", ";
+      display: inline-block;
+    }
+    span:last-child::after{
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <script>
-    function get() {
-      fetch('https://api.themoviedb.org/3/movie/550?api_key=307f989bd4d1b2124427b7772542ea7a')
-        .then(res => res.json())
-        .then(json => console.dir(json.id));
-    }
-
-    get();
-  </script>
+  <div class="view"></div>
 </body>
 </html>
