@@ -22,7 +22,7 @@ const renderMovie = movieData => {
 
   $view.innerHTML = `<p>id: ${id}</p>
 										<p>movie title: ${originalTitle}</p>
-										<p><img src="https://image.tmdb.org/t/p/w185/${posterPath}" alt="image"></p>
+										<p><img src="https://image.tmdb.org/t/p/w500/${posterPath}" alt="image"></p>
 										<p>geners: ${genersText}</p>
 										<p>overview: ${overview}</p>`;
 };
