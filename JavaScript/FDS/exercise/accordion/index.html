@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Accordion Menu</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
-  <!-- <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
 
   <style>
     *, *:before, *:after {
@@ -161,9 +161,7 @@
   </ul>
 </body>
 <script>
-  const $accordion = document.querySelector('.accordion');
-  const $accordionList = document.querySelector('.accordion li');
-  const $submenu = document.querySelector('.submenu');
+  // const $accordion = document.querySelector('.accordion');
 
   class Accordion {
     constructor(options) {
@@ -174,22 +172,16 @@
       // do something!
       this.render();
 
-      $accordion.addEventListener('click', ({ target }) => {
+      this.$accordion.addEventListener('click', ({ target }) => {
         if (!target.matches('.accordion .menu')) return;
+  
+        for (let i = 0; i < this.$accordion.children.length; i++) {
+          this.$accordion.children[i].querySelector('.submenu').style.height = 0;
+        }
+
         document.querySelector('.active').classList.remove('active');
         target.parentNode.classList.add('active');
-  
-        console.log(target.parentNode, target, target.nextElementSibling);
 
-        const activeList = target.parentNode.classList.value === 'active' ? target.nextElementSibling : console.log('false');
-        console.log($submenu);
-
-        // document.querySelectorAll('.submenu').style.height = 0;
-        console.log(document.querySelectorAll('.submenu'));
-
-        activeList.style.height = target.parentNode.classList.contains('active') ? `${$submenu.scrollHeight}px` : 0;
-
-        console.log(activeList.style.height);
         this.render();
       });
     }
@@ -205,17 +197,10 @@
 
     // do something!
     render() {
-      // console.log(this.options);
-      const subList = [...$accordion.children];
-
-      // console.log(subList);
-
-      // subList.forEach(listItem => {
-      //   console.log($submenu);
-      //   // $submenu.style.height = $accordionList.classList.contains('active') ? `${$submenu.scrollHeight}px` : 0;
-      //   $submenu.style.height = listItem.classList.value ? `${$submenu.scrollHeight}px` : 0;
-      // });
-      
+      const accordionList = this.$accordion.children;
+      for (let i = 0; i < this.$accordion.children.length; i++) {
+        accordionList[i].querySelector('.submenu').style.height = accordionList[i].classList.contains('active') ? `${accordionList[i].querySelector('.submenu').scrollHeight}px` : 0;
+      }
     }
   }
 
