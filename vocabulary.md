@@ -421,3 +421,7 @@
   Program Counter / Stack Pointer
 
 - 레지스터
+
+- 인터럽트
+
+- 바이너리코드/ 바이트코드
