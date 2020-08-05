@@ -436,7 +436,18 @@
   
 - REST
 
+## React
+
+
+- 마운팅
+
+  처음 DOM에 렌더링 될 때마다 타이머를 설정
+
 - 라우팅
 
   주소에 따라 다른뷰를 렌더링하는 것
+  
+- componentDidMount
+
+- 데이터 페칭 (Data fetching)
 
