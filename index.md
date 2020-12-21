@@ -20,8 +20,6 @@
 
 - [Expression and Statement](./JavaScript/FDS/200422-4-5.md#표현식과-문)
 
-  정리 완료
-
   ---
 
   
@@ -128,6 +126,9 @@
 
 
 ## TypeScript
+
+- [소개](./TypeScript/chapter-1.md)
+- [타입스크립트: 3,000미터 상공에서 내려다보기](./TypeScript/chapter-2.md)
 
 
 
