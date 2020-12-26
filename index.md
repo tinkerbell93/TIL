@@ -20,11 +20,11 @@
 
 - [Expression and Statement](./JavaScript/FDS/200422-4-5.md#표현식과-문)
 
+- [Datatype](./JavaScript/FDS/200424-6-7.md#데이터-타입)
+
   ---
 
   
-
-- [Datatype](./JavaScript/FDS/200424-6-7.md#데이터-타입)
 
 - [Operator](./JavaScript/FDS/200424-6-7.md#연산자)
 
@@ -119,8 +119,11 @@
 - [Stop watch](./JavaScript/FDS/exercise/stop-watch)
 
 - [Analog clock](./JavaScript/FDS/exercise/analog-clock)
+
 - [Popup UI](./JavaScript/FDS/exercise/popup)
+
 - [Tabs UI](./JavaScript/FDS/exercise/tabs)
+
 - [Accordion UI](./JavaScript/FDS/exercise/accordion)
 
 
