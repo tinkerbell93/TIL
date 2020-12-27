@@ -22,11 +22,11 @@
 
 - [Datatype](./JavaScript/FDS/200424-6-7.md#데이터-타입)
 
+- [Operator](./JavaScript/FDS/200424-6-7.md#연산자)
+
   ---
 
   
-
-- [Operator](./JavaScript/FDS/200424-6-7.md#연산자)
 
 - [Control Flow Statement](./JavaScript/FDS/200426-8-9.md#제어문)
 
