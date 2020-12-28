@@ -24,11 +24,11 @@
 
 - [Operator](./JavaScript/FDS/200424-6-7.md#연산자)
 
+- [Control Flow Statement](./JavaScript/FDS/200426-8-9.md#제어문)
+
   ---
 
   
-
-- [Control Flow Statement](./JavaScript/FDS/200426-8-9.md#제어문)
 
 - [Type conversion](./JavaScript/FDS/200426-8-9.md#타입-변환과-단축-평가)
 
