@@ -132,6 +132,7 @@
 
 - [소개](./TypeScript/chapter-1.md)
 - [타입스크립트: 3,000미터 상공에서 내려다보기](./TypeScript/chapter-2.md)
+- [타입의 모든 것](./TypeScript/chapter-3.md)
 
 
 
